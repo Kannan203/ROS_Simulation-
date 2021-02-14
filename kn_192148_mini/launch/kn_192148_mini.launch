@@ -1,0 +1,7 @@
+<launch>
+  
+  <node pkg="kn_192148_mini" type="S1_reaching_goals.py" name ="To_Goal_" output="screen"/>
+  <node pkg="kn_192148_mini" type="S2_avoiding_obstacles.py" name ="Avoid_Wall" output="screen"/>
+  <node pkg="kn_192148_mini" type="Master_control.py" name ="robot_initiation" respawn="true" output="screen"/>
+
+</launch>
